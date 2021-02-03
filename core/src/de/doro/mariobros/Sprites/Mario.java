@@ -268,6 +268,7 @@ public class Mario extends Sprite {
         }
     }
 
+    ///schuhu buhu
     public void redefineMario(){
         Vector2 position = b2body.getPosition();
         world.destroyBody(b2body);
