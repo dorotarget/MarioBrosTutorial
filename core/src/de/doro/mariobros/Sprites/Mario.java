@@ -31,7 +31,7 @@ public class Mario extends Sprite {
     public Body b2body;
 
     private TextureRegion marioStand;
-    private Animation marioRun;
+    private Animation <TextureRegion>marioRun;
     private TextureRegion marioJump;
     private TextureRegion marioDead;
     private TextureRegion bigMarioStand;
@@ -212,7 +212,7 @@ public class Mario extends Sprite {
             marioIsBig = true;
             timeToDefineBigMario = true;
             setBounds(getX(), getY(), getWidth(), getHeight() * 2);
-            MarioBros.manager.get("audio/sounds/powerup.wav", Sound.class).play();
+            MarioBros.manager.get("audio/sounds/smb_powerup.wav", Sound.class).play();
         }
     }
 
@@ -261,7 +261,7 @@ public class Mario extends Sprite {
                 marioIsBig = false;
                 timeToRedefineMario = true;
                 setBounds(getX(), getY(), getWidth(), getHeight() / 2);
-                MarioBros.manager.get("audio/sounds/powerdown.wav", Sound.class).play();
+                MarioBros.manager.get("audio/sounds/smb_pipe.wav", Sound.class).play();
             } else {
                 die();
             }
