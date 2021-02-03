@@ -21,7 +21,7 @@ import de.doro.mariobros.Screens.PlayScreen;
 import de.doro.mariobros.Sprites.Enemies.Enemy;
 import de.doro.mariobros.Sprites.Enemies.Turtle;
 
-
+//bllaba
 public class Mario extends Sprite {
     public enum State { FALLING, JUMPING, STANDING, RUNNING, GROWING, DEAD };
     public State currentState;
@@ -268,6 +268,7 @@ public class Mario extends Sprite {
         }
     }
 
+    ///schuhu buhu
     public void redefineMario(){
         Vector2 position = b2body.getPosition();
         world.destroyBody(b2body);
